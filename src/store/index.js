@@ -4,6 +4,7 @@ import Vuex from 'vuex';
 // import example from './module-example'
 
 Vue.use(Vuex);
+import personalized from 'src/store/modules/personalized';
 
 /*
  * If not building with SSR mode, you can
@@ -18,6 +19,7 @@ export default function (/* { ssrContext } */) {
 	const Store = new Vuex.Store({
 		modules: {
 			// example
+			personalized
 		},
 
 		// enable strict mode (adds overhead!)
